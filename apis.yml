@@ -1,8 +1,29 @@
 aid: rapidclaims
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rapidclaims.png
 name: RapidClaims
-description: 'RapidClaims is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: automation. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  RapidClaims is a healthcare revenue-cycle-management (RCM) company building
+  autonomous AI agents for medical coding and claims. Its platform automates
+  medical coding (RapidCode), value-based-care coding and risk adjustment
+  (RapidVBC), denial management and revenue recovery (RapidRecovery), and a
+  unified revenue cycle platform (RapidRCM) for FQHCs, community health centers,
+  ACOs, physician groups, ambulatory surgery centers, hospitals, and management
+  services organizations. The company emphasizes a healthcare-grade security and
+  compliance posture (HIPAA, HITRUST, SOC 2 Type II, 256-bit encryption).
+  RapidClaims is backed by Accel and was added to the API Evangelist network as a
+  company profile; it publishes no public developer API, SDK, or developer portal
+  at this time.
 url: https://raw.githubusercontent.com/api-evangelist/rapidclaims/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Automation
+- Healthcare
+- Revenue Cycle Management
+- Medical Coding
+- Artificial Intelligence
+- Claims
+- Compliance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +52,26 @@ maintainers:
 common:
 - type: Website
   url: https://www.rapidclaims.ai/
+- type: Blog
+  url: https://www.rapidclaims.ai/blogs
+- type: SignUp
+  url: https://www.rapidclaims.ai/request-demo
+- type: Login
+  url: https://coding.rapidclaims.ai
+- type: TermsOfService
+  url: https://www.rapidclaims.ai/legal/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.rapidclaims.ai/legal/privacy-policy
+- type: Compliance
+  url: https://www.rapidclaims.ai/
+- type: DomainSecurity
+  url: security/rapidclaims-domain-security.yml
+- type: Conformance
+  url: conformance/rapidclaims-conformance.yml
+- type: WellKnown
+  url: well-known/rapidclaims-well-known.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

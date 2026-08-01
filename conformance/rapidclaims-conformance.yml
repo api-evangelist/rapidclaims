@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.rapidclaims.ai/
+summary: >-
+  RapidClaims publishes a healthcare-compliance security posture on its website:
+  HIPAA compliant, HITRUST certified, SOC 2 Type II audited, and 256-bit
+  encryption. No public developer API, OpenAPI spec, or OAuth/OIDC surface was
+  found, so cross-cutting API standards (oauth2, oidc, rfc9457, json:api,
+  pagination, idempotency) cannot be asserted from a spec.
+standards:
+- id: hipaa
+  conforms: true
+  evidence: 'Homepage states "HIPAA compliant"; healthcare RCM / medical-coding platform.'
+- id: hitrust
+  conforms: true
+  evidence: 'Homepage states "HITRUST certified".'
+- id: soc2-type-ii
+  conforms: true
+  evidence: 'Homepage states "SOC 2 Type II audited".'
+- id: encryption-in-transit
+  conforms: true
+  evidence: 'Homepage states "256-bit encryption"; TLS 1.3 + HSTS confirmed by domain-security probe.'
+- id: oauth2
+  conforms: false
+  evidence: No public OpenAPI or documented OAuth surface.
+- id: oidc
+  conforms: false
+  evidence: /.well-known/openid-configuration returns 404.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No public API spec to evaluate error format.
